@@ -28,4 +28,11 @@ let checkResult = (board, token) => {
 
 let result = checkResult(board, 'X') ? "Result: X is the WINNER!" : checkResult(board, 'O') ? "Result: O is the WINNER!" : "Result: DRAW!"
 console.log(result);
-     
+ 
+
+let d = new Date();
+let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+document.getElementById("day").append(days[d.getDay()]);
+
+document.getElementById("time").append(d.toLocaleString('en-US', { hour12: true, hour: 'numeric', minute: 'numeric', second: 'numeric' }));
