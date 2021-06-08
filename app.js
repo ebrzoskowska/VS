@@ -1,10 +1,19 @@
+// task 1
+// Write a function which takes a string and
+// returns it written backwards (reverses it),
+// logging the result to the console.
+
 const reverseString = (newString) => {
 
     let myString = "cholerka!";
     return newString = myString.split("").reverse().join("");
 };
-
 console.log(reverseString());
+
+// task 2
+// create tic tac toe board and Write an if statement that checks 
+// for all possible conditions of winning, whether it’s across in 
+// one of the rows or columns, or diagonally. 
 
 let board = [
     ['X', 'O', 'O'],
@@ -29,6 +38,8 @@ let checkResult = (board, token) => {
 let result = checkResult(board, 'X') ? "Result: X is the WINNER!" : checkResult(board, 'O') ? "Result: O is the WINNER!" : "Result: DRAW!"
 console.log(result);
  
+// task 3
+// Write a JavaScript program to display the current day and time 
 
 let d = new Date();
 let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
