@@ -36,3 +36,5 @@ let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturda
 document.getElementById("day").append(days[d.getDay()]);
 
 document.getElementById("time").append(d.toLocaleString('en-US', { hour12: true, hour: 'numeric', minute: 'numeric', second: 'numeric' }));
+
+
