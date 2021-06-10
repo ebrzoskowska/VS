@@ -54,3 +54,14 @@ let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturda
 const bDayParsed = Date.parse("May 29, 1985");
 let d = new Date(bDayParsed);
 console.log(days[d.getDay()]);
+
+// task 4
+// Write a JavaScript program to find 1st January is 
+// being a Sunday between 2014 and 2050.
+
+for (let year = 2014; year <= 2050; year++) 
+{
+	let day = new Date(year, 0, 1);
+	if (day.getDay() === 0) 
+		console.log(`1st January was a Sunday in ${year} year`)
+}
