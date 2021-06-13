@@ -61,7 +61,26 @@ console.log(days[d.getDay()]);
 
 for (let year = 2014; year <= 2050; year++) 
 {
-	let day = new Date(year, 0, 1);
+    let day = new Date(year, 0, 1);
 	if (day.getDay() === 0) 
-		console.log(`1st January was a Sunday in ${year} year`)
+	    console.log(`1st January was a Sunday in ${year} year`)
 }
+
+// task 5
+// Write a function called dataChecker which takes two parameters (string, rank).
+// If the string is equal to ‘codenation’ and the rank is equal to 1 then
+// log to the console a template string to tell us both are correct.
+// If the string is ‘codenation’ but the rank isn’t 1 log to the console a
+// template string that tells us the string was correct but the rank was wrong.
+// Finally if the string was not equal to ‘codenation’ then log to the
+// console a template string which tells us that the string was wrong.
+
+const dataChecker = (string, rank) => {
+	if (string == 'codenation' && rank == 1) 
+		console.log('String and rank are correct')
+	else if (string == 'codenation' && rank !== 1)
+		console.log('String was correct but the rank was wrong')
+	else 
+		console.log('String was wrong')			
+}
+dataChecker('teapot', 666)
