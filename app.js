@@ -55,7 +55,7 @@ const bDayParsed = Date.parse("May 29, 1985");
 let d = new Date(bDayParsed);
 console.log(days[d.getDay()]);
 
-// task 4
+// task 5
 // Write a JavaScript program to find 1st January is 
 // being a Sunday between 2014 and 2050.
 
@@ -66,7 +66,7 @@ for (let year = 2014; year <= 2050; year++)
 	    console.log(`1st January was a Sunday in ${year} year`)
 }
 
-// task 5
+// task 6
 // Write a function called dataChecker which takes two parameters (string, rank).
 // If the string is equal to ‘codenation’ and the rank is equal to 1 then
 // log to the console a template string to tell us both are correct.
