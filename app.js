@@ -84,3 +84,34 @@ const dataChecker = (string, rank) => {
 		console.log('String was wrong')			
 }
 dataChecker('teapot', 666)
+
+// task 7
+// Write a JavaScript program where the program takes a random integer between 1 to 10, 
+// the user is then prompted to input a guess number. If the user input matches with guess number, 
+// the program will display a message "Good Work" otherwise display a message "Not matched". 
+
+
+let randomInt = Math.floor(Math.random() * 11);
+
+const myHeading = document.getElementById("heading");
+const myInput = document.getElementById("input");
+const myButton = document.getElementById("submit");
+
+// like that
+myButton.addEventListener("click",() => {
+    if (myInput.value == randomInt) {
+		document.getElementById("alert").innerHTML = "Good Work!!"
+	} else {
+		document.getElementById("alert").innerHTML = "Not matched!!"
+	}
+});
+
+// or like that
+const randomNumber = (event) => {
+	if  (myInput.value == randomInt && event.target == myButton) 
+		document.getElementById("alert").innerHTML = "Good Work!!"				
+	 else 
+		document.getElementById("alert").innerHTML = "Not matched!!"
+	
+}
+window.addEventListener('click', randomNumber, false);
