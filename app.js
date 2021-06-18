@@ -116,7 +116,7 @@ const randomNumber = (event) => {
 }
 window.addEventListener('click', randomNumber, false);
 
-// task 7
+// task 8
 // Write a JavaScript program to calculate days left until next Christmas.
 
 const todaysDayParsed = new Date(Date.parse("June 18, 2021"));
