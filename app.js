@@ -115,3 +115,17 @@ const randomNumber = (event) => {
 	
 }
 window.addEventListener('click', randomNumber, false);
+
+// task 7
+// Write a JavaScript program to calculate days left until next Christmas.
+
+const todaysDayParsed = new Date(Date.parse("June 18, 2021"));
+const chistmasDayParsed = new Date(Date.parse("December 24, 2021"));
+// The Date.parse() method parses a string representation of a date, and 
+// returns the number of milliseconds since January 1, 1970
+
+const timeDifference = chistmasDayParsed.getTime() - todaysDayParsed.getTime();
+const day = (1000*60*60*24);
+
+const daysLeftUntilChristmas = timeDifference/day;
+console.log(Math.ceil(daysLeftUntilChristmas));
