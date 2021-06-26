@@ -152,3 +152,11 @@ function difference(a, b) {
 }
 
 console.log(difference([1,2,2],[1]))
+
+// task 11
+// Your task is to write a function that takes a string and return a new string with all vowels removed.
+// Note: y isn't considered a vowel.
+
+function disemvowel(str) {
+    return str.replace((/[aeiou]/gi), "");
+  }
