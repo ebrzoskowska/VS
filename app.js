@@ -159,4 +159,4 @@ console.log(difference([1,2,2],[1]))
 
 function disemvowel(str) {
     return str.replace((/[aeiou]/gi), "");
-  }
+}
