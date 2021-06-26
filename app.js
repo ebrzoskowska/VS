@@ -129,3 +129,26 @@ const day = (1000*60*60*24);
 
 const daysLeftUntilChristmas = timeDifference/day;
 console.log(Math.ceil(daysLeftUntilChristmas));
+
+// task 9
+// Your task is to write a function maskify, which changes all but the last four characters into '#'.
+
+function maskify(cc) {
+	let lastFourCHars = cc.slice(-4);
+	let wholeString = cc.replace(/./g, "#");
+	return wholeString + lastFourCHars;
+}
+console.log(maskify("zla gruba i brzydka"))
+
+// task 10
+// Your goal is to implement a difference function, which subtracts one list from another 
+// and returns the result.
+// It should remove all values from list a, which are present in list b keeping their order.
+// If a value is present in b, all of its occurrences must be removed from the other.
+
+function difference(a, b) {
+	let difference = a.filter(x => b.indexOf(x) === -1);
+	return difference
+}
+
+console.log(difference([1,2,2],[1]))
