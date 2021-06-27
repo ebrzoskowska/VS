@@ -141,8 +141,7 @@ function maskify(cc) {
 console.log(maskify("zla gruba i brzydka"))
 
 // task 10
-// Your goal is to implement a difference function, which subtracts one list from another 
-// and returns the result.
+// Implement a difference function, which subtracts one list from another and returns the result.
 // It should remove all values from list a, which are present in list b keeping their order.
 // If a value is present in b, all of its occurrences must be removed from the other.
 
@@ -154,9 +153,38 @@ function difference(a, b) {
 console.log(difference([1,2,2],[1]))
 
 // task 11
-// Your task is to write a function that takes a string and return a new string with all vowels removed.
+// Write a function that takes a string and return a new string with all vowels removed.
 // Note: y isn't considered a vowel.
 
 function disemvowel(str) {
     return str.replace((/[aeiou]/gi), "");
 }
+
+// task 12
+// Change all first letters of given sentence to upper case
+
+const firstLetterUp = (oldStr) => {
+    const splitArr = oldStr.split(" "); 
+    let newStr = "";
+    for(var i =0; i < splitArr.length; i++)
+      {
+        splitArr[i]= splitArr[i].charAt(0).toUpperCase() + splitArr[i].slice(1);
+      }
+    return newStr += splitArr.join(" ");
+}    
+console.log(firstLetterUp("How can mirrors be real if our eyes aren't real"))
+
+// or:
+
+const firstLetterUp = () => {
+    const oldStr = "How can mirrors be real if our eyes aren't real";
+    const splitArr = oldStr.split(" "); 
+    let newStr = "";
+    for(var i =0; i < splitArr.length; i++)
+      {
+        splitArr[i]= splitArr[i].charAt(0).toUpperCase() + splitArr[i].slice(1);
+      }
+    return newStr += splitArr.join(" ");
+    }
+console.log(firstLetterUp())
+    
