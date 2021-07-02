@@ -187,4 +187,14 @@ const firstLetterUp = () => {
     return newStr += splitArr.join(" ");
     }
 console.log(firstLetterUp())
+
+// or:
+
+String.prototype.toJadenCase = function () {
+    let newStr = this.split(" ");
+    for(i = 0; i < newStr.length; i++) {
+		newStr[i] = newStr[i].charAt(0).toUpperCase() + newStr[i].substring(1);
+    }
+    return newStr.join(" ");
+};
     
